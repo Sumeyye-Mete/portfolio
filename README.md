@@ -21,7 +21,9 @@ Here's what powers this portfolio:
 
 - React.js: Bringing interactivity and smooth navigation.
 - SCSS: Adding style and flexibility.
+- Bootstrap: Streamlining design and layout with its robust framework.
 - Email-js npm package: Facilitating seamless communication.
+
 
 ### Links
 
