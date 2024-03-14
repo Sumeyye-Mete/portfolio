@@ -1,0 +1,52 @@
+@use "../styles/variables" as v;
+
+.portfolio-section {
+	.project {
+		cursor: pointer;
+		.inner-div {
+			position: relative;
+			border-radius: 15px;
+			img {
+				transition: all 0.5s;
+			}
+			.blur {
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				z-index: 70;
+				background-color: hsla(0, 0%, 0%, 0.8);
+				opacity: 0;
+				transition: opacity 0.4s;
+				.links a {
+					display: flex;
+					align-items: center;
+					gap: 0.5rem;
+					color: #fff;
+					border: white 1px solid;
+					border-radius: 3rem;
+					padding: 0.5rem;
+					text-decoration: none;
+					&:hover {
+						background-color: #fff;
+						color: black;
+					}
+				}
+			}
+		}
+		&:hover div.blur {
+			opacity: 1;
+		}
+		&:hover img {
+			transform: scale(1.05);
+			filter: blur(2px);
+			-webkit-filter: blur(2px);
+		}
+	}
+}
+#dark {
+	.portfolio-section {
+		background-color: v.$bg-dark-1 !important;
+	}
+}

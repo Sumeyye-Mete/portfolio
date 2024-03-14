@@ -1,0 +1,75 @@
+@use "../styles/variables" as v;
+.menubar {
+	padding: 0 !important;
+	height: 75px !important;
+	button.menu-toggler {
+		border: none;
+		display: flex;
+		flex-direction: column;
+		background-color: transparent;
+		&:focus {
+			box-shadow: none;
+		}
+		span {
+			width: 30px;
+			height: 2px;
+			background-color: #fff;
+			margin: 4px 0;
+			&:nth-child(1),
+			&:nth-child(3) {
+				transition: 0.3s;
+			}
+		}
+	}
+	.cross {
+		span:nth-child(1) {
+			transform: translate(-3px, 10px) rotate(45deg);
+		}
+		span:nth-child(2) {
+			opacity: 0;
+		}
+		span:nth-child(3) {
+			transform: translate(-3px, -10px) rotate(-45deg);
+		}
+	}
+
+	.list-group {
+		* {
+			background-color: #212529;
+			color: white;
+		}
+		top: 100%;
+		.list-group-item {
+			font-weight: 600;
+			text-align: center;
+			&:hover {
+				background-color: #212529 !important;
+				color: v.$color1;
+			}
+			&:active,
+			&:focus {
+				background-color: #212529 !important;
+				color: white;
+			}
+		}
+		.colored {
+			background-color: #212529 !important;
+			color: v.$color1 !important;
+		}
+	}
+	.icon {
+		cursor: pointer;
+	}
+	@media (min-width: 992px) {
+		.navbar-collapse {
+			justify-content: center;
+		}
+		.list-group {
+			flex-direction: row !important;
+			position: relative !important;
+			.list-group-item {
+				border: none;
+			}
+		}
+	}
+}

@@ -1,0 +1,36 @@
+@use "../styles/variables" as v;
+
+.resume-section {
+	background-color: v.$lightgray !important;
+	.text-area {
+		color: red;
+	}
+	.skills img.image {
+		width: 100px;
+		height: 100px;
+		object-fit: contain;
+		@media (max-width: 576px) {
+			width: 50px;
+			height: 50px;
+		}
+	}
+}
+
+#dark {
+	.resume-section {
+		background-color: v.$bg-dark-2 !important;
+		.education-section,
+		.experience-section {
+			div {
+				background-color: v.$bg-dark-1 !important;
+				color: v.$color2-50;
+				.text-area {
+					color: v.$color1;
+				}
+			}
+		}
+		.skills h5 {
+			color: v.$color2-50;
+		}
+	}
+}

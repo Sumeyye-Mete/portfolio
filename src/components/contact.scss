@@ -1,0 +1,19 @@
+@use "../styles/variables" as v;
+.contact-section {
+	background-color: v.$lightgray !important;
+	input::placeholder,
+	textarea::placeholder {
+		color: rgb(137, 136, 136) !important;
+	}
+}
+#dark {
+	.contact-section {
+		background-color: v.$bg-dark-2 !important;
+		input,
+		textarea {
+			background-color: v.$bg-dark-1 !important;
+			border: none !important;
+			color: white !important;
+		}
+	}
+}

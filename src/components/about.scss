@@ -1,0 +1,10 @@
+@use "../styles/variables" as v;
+
+#dark {
+	.about-section {
+		background-color: v.$bg-dark-1 !important;
+		.list-group-item {
+			background-color: v.$bg-dark-1 !important;
+		}
+	}
+}
