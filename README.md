@@ -27,5 +27,5 @@ Here's what powers this portfolio:
 
 Feel free to make this portfolio your own:
 
-- git clone : https://github.com/Sumeyye-Mete/music-player-app.git
-- live site URL : https://mete-music-app.netlify.app
+- git clone : https://github.com/Sumeyye-Mete/portfolio.git
+- live site URL : 
