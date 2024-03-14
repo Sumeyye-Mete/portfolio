@@ -28,4 +28,4 @@ Here's what powers this portfolio:
 Feel free to make this portfolio your own:
 
 - git clone : https://github.com/Sumeyye-Mete/portfolio.git
-- live site URL : 
+- live site URL : https://portfolioexamplesite.netlify.app/
